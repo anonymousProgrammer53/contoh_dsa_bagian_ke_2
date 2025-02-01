@@ -8,7 +8,7 @@ fetch('https://www.omdbapi.com/?apikey=3bbc8b76&s=One Piece')
     .then(data => {
         let cards = '';
         data.Search.forEach((movie) => {
-            cards += `<div class="col-md-3 my-4">
+            cards += `<div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-4">
                         <div class="card">
                             <img src="${movie.Poster}" class="card-img-top">
                             <div class="card-body">
