@@ -37,32 +37,28 @@ fetch('https://www.omdbapi.com/?apikey=3bbc8b76&s=One Piece')
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="showMovieDetailModalLabel">Modal title</h1>
+                                    <h1 class="modal-title fs-5" id="showMovieDetailModalLabel"><strong>Title</strong> : ${data.Title}</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
-                                        <div class="col-lg-4">
-                                            <img src=${data.Poster} class="img-fluid mb-4 w-100">
-                                        </div>
-                                        <div class="col-lg-8">
+                                        <div class="col-12">
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item"><strong>Title</strong> : ${data.Title}</li>
                                                 <li class="list-group-item"><strong>Year</strong> : ${data.Year}</li>
                                                 <li class="list-group-item"><strong>Type</strong> : ${data.Type}</li>
                                                 <li class="list-group-item"><strong>Released</strong> : ${data.Released}</li>
-                                                <li class="list-group-item"><strong>Runtime</strong> : ${data.Rintime}</li>
+                                                <li class="list-group-item"><strong>Runtime</strong> : ${data.Runtime}</li>
                                                 <li class="list-group-item"><strong>Genre</strong> : ${data.Genre}</li>
                                                 <li class="list-group-item"><strong>Language</strong> : ${data.Language}</li>
                                                 <li class="list-group-item"><strong>Country</strong> : ${data.Country}</li>
                                                 <li class="list-group-item"><strong>Actors</strong> : ${data.Actors}</li>
                                                 <li class="list-group-item"><strong>Awards</strong> : ${data.Awards}</li>
                                                 <li class="list-group-item"><strong>Plot</strong> : ${data.Plot}</li>
-                                            </ul >
-                                        </div >
-                                    </div >
-                                </div >
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             <div class="modal-footer"></div>
                             </div >
                         </div >
