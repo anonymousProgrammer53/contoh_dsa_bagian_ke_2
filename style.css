@@ -47,8 +47,16 @@ nav>section {
     column-gap: 2rem;
 }
 
+.searching-data-section {
+    max-width: 768px;
+    margin-inline: auto;
+    padding: 2rem;
+    padding-bottom: 0rem;
+}
+
 footer {
     margin-inline: auto;
+    padding-top: 0rem;
     padding: 2rem;
     text-align: center;
 }
