@@ -1,4 +1,4 @@
-fetch('http://www.omdbapi.com/?apikey=3bbc8b76&s=One Piece')
+fetch('https://www.omdbapi.com/?apikey=3bbc8b76&s=One Piece')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -22,7 +22,7 @@ fetch('http://www.omdbapi.com/?apikey=3bbc8b76&s=One Piece')
         document.querySelector('.movies-container').innerHTML = cards;
         document.querySelectorAll('.modal-detail-button').forEach((modalDetalButton) => {
             modalDetalButton.addEventListener('click', (e) => {
-                fetch(`http://www.omdbapi.com/?apikey=3bbc8b76&i=${e.target.getAttribute('data-imdbid')}`)
+                fetch(`https://www.omdbapi.com/?apikey=3bbc8b76&i=${e.target.getAttribute('data-imdbid')}`)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Network response was not ok');
