@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh DSA Bagian ke 2</title>
+    <title>Contoh Algoritma DSA Sederhana</title>
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 <body>
     <div id="app">
         <header>
-            <h1>Contoh DSA Bagian ke 2</h1>
+            <h1>Contoh Algoritma DSA Sederhana</h1>
             <nav>
                 <section>
                     <a href="https://www.w3schools.com/dsa/index.php" target="_blank">Penjelasan tentang DSA</a>
@@ -25,33 +25,63 @@
                 </section>
                 <section>
                     <a href="https://anonymousprogrammer53.github.io/contoh_dsa/">Contoh DSA</a>
-                    <a href="https://anonymousprogrammer53.github.io/contoh_dsa_bagian_ke_2/">Contoh DSA Bagian ke 2</a>
-                    <a href="https://anonymousprogrammer53.github.io/contoh_algoritma_dsa_sederhana/">Contoh Algoritma DSA Sederhana</a>
+                    <a href="">Contoh DSA Bagian ke 2</a>
+                    <a href="#">Contoh Algoritma DSA Sederhana</a>
                 </section>
             </nav>
         </header>
         <main>
-            <section class="searching-data-section">
-                <h2>Contoh DSA Mencari dan Menampilkan Data OMDB Berdasarkan Input User</h2>
-                <div class="input-group input-group-lg mt-4">
-                    <span class="input-group-text" id="inputGroup-sizing-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
-                            class="bi bi-search" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                        </svg>
-                    </span>
-                    <input type="text" class="form-control search-input" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-lg">
-                </div>
-                <div class="row mt-4 movies-container"></div>
-                <div class="row mt-3 modal-container"></div>
-            </section>
+            <header>
+                <nav>
+                    <section>
+                        <a class="link-primary">Fo Loop</a>
+                        <a class="link-primary">Recursive Function</a>
+                        <a class="link-primary">Recursive Function n</a>
+                    </section>
+                </nav>
+            </header>
+            <article>
+                <section class="using-for-loop">
+                    <h2>Implementasi Angka Fibonacci Menggunakan For Loop</h2>
+                    <div class="input-group input-group-lg mt-4">
+                        <button class="input-group-text fs-4 fibonacci-number-btn">
+                            Input Angka
+                        </button>
+                        <input type="text" class="form-control fibonacci-number-input fs-4" placeholder="Angka pertama">
+                        <input type="text" class="form-control fibonacci-number-input fs-4" placeholder="Angka kedua">
+                    </div>
+                    <div class="mt-4 fibonacci-number-container"></div>
+                </section>
+                <section class="using-recursive-function d-none">
+                    <h2>Implementasi Angka Fibonacci Recursive Function</h2>
+                    <div class="input-group input-group-lg mt-4">
+                        <button class="input-group-text fs-4 fibonacci-number-btn">
+                            Input Angka
+                        </button>
+                        <input type="text" class="form-control fibonacci-number-input fs-4" placeholder="Angka pertama">
+                        <input type="text" class="form-control fibonacci-number-input fs-4" placeholder="Angka kedua">
+                    </div>
+                    <div class="mt-4 fibonacci-number-container"></div>
+                </section>
+                <section class="using-recursive-function-n d-none">
+                    <h2>Implementasi Menemukan Angka Fibonacci 0 dan 1 n (urutan ke berapa) Menggunakan Recursive
+                        Function</h2>
+                    <div class="input-group input-group-lg mt-4">
+                        <button class="input-group-text fs-4 fibonacci-number-btn">
+                            Input Angka
+                        </button>
+                        <input type="text" class="form-control fibonacci-number-input fs-4"
+                            placeholder="Angka Fibonacci Urutan ke Berapa">
+                    </div>
+                    <div class="mt-4 fibonacci-number-container"></div>
+                </section>
+            </article>
         </main>
         <footer>
             <nav>
                 <section>
-                    <a href="https://www.w3schools.com/dsa/dsa_data_arrays.php" target="_blank">Penjelasan tentang DSA
+                    <a href="https://www.w3schools.com/dsa/dsa_data_arrays.php" target="_blank">Penjelasan
+                        tentang DSA
                         Arrays</a>
                 </section>
                 <section>
