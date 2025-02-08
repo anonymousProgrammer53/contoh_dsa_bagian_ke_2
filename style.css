@@ -24,6 +24,10 @@ body {
     font-style: normal;
 }
 
+a {
+    cursor: pointer;
+}
+
 header {
     max-width: 768px;
     margin-inline: auto;
@@ -48,7 +52,10 @@ nav>section {
     column-gap: 2rem;
 }
 
-.searching-data-section {
+
+.using-for-loop,
+.using-recursive-function,
+.using-recursive-function-n {
     max-width: 768px;
     margin-inline: auto;
     padding: 2rem;
@@ -57,7 +64,6 @@ nav>section {
 
 footer {
     margin-inline: auto;
-    padding-top: 0rem;
     padding: 2rem;
     text-align: center;
 }
