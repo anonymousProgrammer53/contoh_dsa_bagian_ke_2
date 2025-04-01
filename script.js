@@ -2,9 +2,9 @@ const componentMoviesContainer = () => {
     return document.getElementById('movies-container');
 }
 
-const componentCollSM4 = (parentComponent) => {
+const componentMoviesContainerColl = (parentComponent) => {
     const div = document.createElement('div');
-    div.classList.add('col-sm-4');
+    div.classList.add('col-sm-4', 'col-6');
     parentComponent.appendChild(div);
     return div;
 }
@@ -28,7 +28,7 @@ const displayComponentCard = (url) => {
         .then(data => {
             if (data.Search) {
                 data.Search.forEach(item => {
-                    const colDiv = componentCollSM4(componentMoviesContainer());
+                    const colDiv = componentMoviesContainerColl(componentMoviesContainer());
                     return componentCard(colDiv, item.Poster, item.Title, item.Year, item.imdbID);
                 });
             } else {
