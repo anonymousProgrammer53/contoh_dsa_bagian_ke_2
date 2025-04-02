@@ -41,16 +41,19 @@ const createCardGroup = (parentComponent, data) => {
                 if (getModalFade) {
                     getModalFade.remove();
                 }
+
                 fetchData(`https://www.omdbapi.com/?apikey=3bbc8b76&i=${button.getAttribute('data-imdbid')}`, (data) => {
                     if (data) {
                         const parentComponent = document.getElementById('movies-detail-container');
                         createModalFade(parentComponent, data);
+
+                        const newModalFade = document.getElementById('modalFade');
+                        if (newModalFade) {
+                            const modalInstance = new bootstrap.Modal(newModalFade);
+                            modalInstance.show();
+                        }
                     }
                 });
-                if (getModalFade) {
-                    const modalFade = new bootstrap.Modal(getModalFade);
-                    modalFade.show();
-                }
             });
         });
     });
